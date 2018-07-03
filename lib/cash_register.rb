@@ -17,7 +17,7 @@ class CashRegister
     self.total += price * quantity
     new_items = Array.new(quantity, items)
     @items << new_items
-    @items.flatten
+    @items.flatten!
   end
 
   def apply_discount
